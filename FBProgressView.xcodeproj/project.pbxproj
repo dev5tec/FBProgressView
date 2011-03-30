@@ -53,6 +53,7 @@
 		4CB322521342CDF1008FC946 /* FBProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBProgressViewTests.m; sourceTree = "<group>"; };
 		4CB3225C1342CE11008FC946 /* FBProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressView.h; sourceTree = "<group>"; };
 		4CB3225D1342CE11008FC946 /* FBProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBProgressView.m; sourceTree = "<group>"; };
+		4CB3227213436738008FC946 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		4CB3221A1342CDF0008FC946 = {
 			isa = PBXGroup;
 			children = (
+				4CB3227213436738008FC946 /* README.md */,
 				4CB3222F1342CDF0008FC946 /* FBProgressView */,
 				4CB322491342CDF1008FC946 /* FBProgressViewTests */,
 				4CB322281342CDF0008FC946 /* Frameworks */,
@@ -111,10 +113,10 @@
 		4CB3222F1342CDF0008FC946 /* FBProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				4CB322301342CDF0008FC946 /* Supporting Files */,
 				4CB322381342CDF0008FC946 /* FBProgressViewAppDelegate.h */,
 				4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */,
 				4CB3223B1342CDF1008FC946 /* MainWindow.xib */,
-				4CB322301342CDF0008FC946 /* Supporting Files */,
 				4CB3225C1342CE11008FC946 /* FBProgressView.h */,
 				4CB3225D1342CE11008FC946 /* FBProgressView.m */,
 			);
@@ -431,6 +433,7 @@
 				4CB322581342CDF1008FC946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CB322591342CDF1008FC946 /* Build configuration list for PBXNativeTarget "FBProgressViewTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +442,7 @@
 				4CB3225B1342CDF1008FC946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
