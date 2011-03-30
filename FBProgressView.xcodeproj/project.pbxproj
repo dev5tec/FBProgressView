@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CB3222A1342CDF0008FC946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB322291342CDF0008FC946 /* UIKit.framework */; };
+		4CB3222C1342CDF0008FC946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3222B1342CDF0008FC946 /* Foundation.framework */; };
+		4CB3222E1342CDF0008FC946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3222D1342CDF0008FC946 /* CoreGraphics.framework */; };
+		4CB322341342CDF0008FC946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB322321342CDF0008FC946 /* InfoPlist.strings */; };
+		4CB322371342CDF0008FC946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB322361342CDF0008FC946 /* main.m */; };
+		4CB3223A1342CDF0008FC946 /* FBProgressViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */; };
+		4CB3223D1342CDF1008FC946 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3223B1342CDF1008FC946 /* MainWindow.xib */; };
+		4CB322441342CDF1008FC946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB322291342CDF0008FC946 /* UIKit.framework */; };
+		4CB322451342CDF1008FC946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3222B1342CDF0008FC946 /* Foundation.framework */; };
+		4CB322461342CDF1008FC946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB3222D1342CDF0008FC946 /* CoreGraphics.framework */; };
+		4CB3224E1342CDF1008FC946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3224C1342CDF1008FC946 /* InfoPlist.strings */; };
+		4CB322511342CDF1008FC946 /* FBProgressViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CB322501342CDF1008FC946 /* FBProgressViewTests.h */; };
+		4CB322531342CDF1008FC946 /* FBProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB322521342CDF1008FC946 /* FBProgressViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CB322471342CDF1008FC946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CB3221C1342CDF0008FC946 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB322241342CDF0008FC946;
+			remoteInfo = FBProgressView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CB322251342CDF0008FC946 /* FBProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB322291342CDF0008FC946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CB3222B1342CDF0008FC946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CB3222D1342CDF0008FC946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CB322311342CDF0008FC946 /* FBProgressView-Info.plist */ = {isa = PBXFileReference; path = "FBProgressView-Info.plist"; sourceTree = "<group>"; };
+		4CB322331342CDF0008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB322351342CDF0008FC946 /* FBProgressView-Prefix.pch */ = {isa = PBXFileReference; path = "FBProgressView-Prefix.pch"; sourceTree = "<group>"; };
+		4CB322361342CDF0008FC946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CB322381342CDF0008FC946 /* FBProgressViewAppDelegate.h */ = {isa = PBXFileReference; path = FBProgressViewAppDelegate.h; sourceTree = "<group>"; };
+		4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBProgressViewAppDelegate.m; sourceTree = "<group>"; };
+		4CB3223C1342CDF1008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4CB322431342CDF1008FC946 /* FBProgressViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBProgressViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB3224B1342CDF1008FC946 /* FBProgressViewTests-Info.plist */ = {isa = PBXFileReference; path = "FBProgressViewTests-Info.plist"; sourceTree = "<group>"; };
+		4CB3224D1342CDF1008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB3224F1342CDF1008FC946 /* FBProgressViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "FBProgressViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		4CB322501342CDF1008FC946 /* FBProgressViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBProgressViewTests.h; sourceTree = "<group>"; };
+		4CB322521342CDF1008FC946 /* FBProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBProgressViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CB322221342CDF0008FC946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3222A1342CDF0008FC946 /* UIKit.framework in Frameworks */,
+				4CB3222C1342CDF0008FC946 /* Foundation.framework in Frameworks */,
+				4CB3222E1342CDF0008FC946 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB3223F1342CDF1008FC946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB322441342CDF1008FC946 /* UIKit.framework in Frameworks */,
+				4CB322451342CDF1008FC946 /* Foundation.framework in Frameworks */,
+				4CB322461342CDF1008FC946 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CB3221A1342CDF0008FC946 = {
+			isa = PBXGroup;
+			children = (
+				4CB3222F1342CDF0008FC946 /* FBProgressView */,
+				4CB322491342CDF1008FC946 /* FBProgressViewTests */,
+				4CB322281342CDF0008FC946 /* Frameworks */,
+				4CB322261342CDF0008FC946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CB322261342CDF0008FC946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CB322251342CDF0008FC946 /* FBProgressView.app */,
+				4CB322431342CDF1008FC946 /* FBProgressViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CB322281342CDF0008FC946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB322291342CDF0008FC946 /* UIKit.framework */,
+				4CB3222B1342CDF0008FC946 /* Foundation.framework */,
+				4CB3222D1342CDF0008FC946 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CB3222F1342CDF0008FC946 /* FBProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				4CB322381342CDF0008FC946 /* FBProgressViewAppDelegate.h */,
+				4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */,
+				4CB3223B1342CDF1008FC946 /* MainWindow.xib */,
+				4CB322301342CDF0008FC946 /* Supporting Files */,
+			);
+			path = FBProgressView;
+			sourceTree = "<group>";
+		};
+		4CB322301342CDF0008FC946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB322311342CDF0008FC946 /* FBProgressView-Info.plist */,
+				4CB322321342CDF0008FC946 /* InfoPlist.strings */,
+				4CB322351342CDF0008FC946 /* FBProgressView-Prefix.pch */,
+				4CB322361342CDF0008FC946 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB322491342CDF1008FC946 /* FBProgressViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CB322501342CDF1008FC946 /* FBProgressViewTests.h */,
+				4CB322521342CDF1008FC946 /* FBProgressViewTests.m */,
+				4CB3224A1342CDF1008FC946 /* Supporting Files */,
+			);
+			path = FBProgressViewTests;
+			sourceTree = "<group>";
+		};
+		4CB3224A1342CDF1008FC946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB3224B1342CDF1008FC946 /* FBProgressViewTests-Info.plist */,
+				4CB3224C1342CDF1008FC946 /* InfoPlist.strings */,
+				4CB3224F1342CDF1008FC946 /* FBProgressViewTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CB322241342CDF0008FC946 /* FBProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB322561342CDF1008FC946 /* Build configuration list for PBXNativeTarget "FBProgressView" */;
+			buildPhases = (
+				4CB322211342CDF0008FC946 /* Sources */,
+				4CB322221342CDF0008FC946 /* Frameworks */,
+				4CB322231342CDF0008FC946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBProgressView;
+			productName = FBProgressView;
+			productReference = 4CB322251342CDF0008FC946 /* FBProgressView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CB322421342CDF1008FC946 /* FBProgressViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB322591342CDF1008FC946 /* Build configuration list for PBXNativeTarget "FBProgressViewTests" */;
+			buildPhases = (
+				4CB3223E1342CDF1008FC946 /* Sources */,
+				4CB3223F1342CDF1008FC946 /* Frameworks */,
+				4CB322401342CDF1008FC946 /* Resources */,
+				4CB322411342CDF1008FC946 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CB322481342CDF1008FC946 /* PBXTargetDependency */,
+			);
+			name = FBProgressViewTests;
+			productName = FBProgressViewTests;
+			productReference = 4CB322431342CDF1008FC946 /* FBProgressViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CB3221C1342CDF0008FC946 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4CB3221F1342CDF0008FC946 /* Build configuration list for PBXProject "FBProgressView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CB3221A1342CDF0008FC946;
+			productRefGroup = 4CB322261342CDF0008FC946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CB322241342CDF0008FC946 /* FBProgressView */,
+				4CB322421342CDF1008FC946 /* FBProgressViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CB322231342CDF0008FC946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB322341342CDF0008FC946 /* InfoPlist.strings in Resources */,
+				4CB3223D1342CDF1008FC946 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB322401342CDF1008FC946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB3224E1342CDF1008FC946 /* InfoPlist.strings in Resources */,
+				4CB322511342CDF1008FC946 /* FBProgressViewTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CB322411342CDF1008FC946 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CB322211342CDF0008FC946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB322371342CDF0008FC946 /* main.m in Sources */,
+				4CB3223A1342CDF0008FC946 /* FBProgressViewAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB3223E1342CDF1008FC946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB322531342CDF1008FC946 /* FBProgressViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CB322481342CDF1008FC946 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CB322241342CDF0008FC946 /* FBProgressView */;
+			targetProxy = 4CB322471342CDF1008FC946 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CB322321342CDF0008FC946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB322331342CDF0008FC946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CB3223B1342CDF1008FC946 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3223C1342CDF1008FC946 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4CB3224C1342CDF1008FC946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB3224D1342CDF1008FC946 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CB322541342CDF1008FC946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CB322551342CDF1008FC946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4CB322571342CDF1008FC946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBProgressView/FBProgressView-Prefix.pch";
+				INFOPLIST_FILE = "FBProgressView/FBProgressView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CB322581342CDF1008FC946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBProgressView/FBProgressView-Prefix.pch";
+				INFOPLIST_FILE = "FBProgressView/FBProgressView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CB3225A1342CDF1008FC946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBProgressView.app/FBProgressView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBProgressViewTests/FBProgressViewTests-Prefix.pch";
+				INFOPLIST_FILE = "FBProgressViewTests/FBProgressViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CB3225B1342CDF1008FC946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBProgressView.app/FBProgressView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBProgressViewTests/FBProgressViewTests-Prefix.pch";
+				INFOPLIST_FILE = "FBProgressViewTests/FBProgressViewTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CB3221F1342CDF0008FC946 /* Build configuration list for PBXProject "FBProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB322541342CDF1008FC946 /* Debug */,
+				4CB322551342CDF1008FC946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CB322561342CDF1008FC946 /* Build configuration list for PBXNativeTarget "FBProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB322571342CDF1008FC946 /* Debug */,
+				4CB322581342CDF1008FC946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CB322591342CDF1008FC946 /* Build configuration list for PBXNativeTarget "FBProgressViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB3225A1342CDF1008FC946 /* Debug */,
+				4CB3225B1342CDF1008FC946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CB3221C1342CDF0008FC946 /* Project object */;
+}
