@@ -20,6 +20,7 @@
 		4CB3224E1342CDF1008FC946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3224C1342CDF1008FC946 /* InfoPlist.strings */; };
 		4CB322511342CDF1008FC946 /* FBProgressViewTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CB322501342CDF1008FC946 /* FBProgressViewTests.h */; };
 		4CB322531342CDF1008FC946 /* FBProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB322521342CDF1008FC946 /* FBProgressViewTests.m */; };
+		4CB3225E1342CE11008FC946 /* FBProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3225D1342CE11008FC946 /* FBProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +38,21 @@
 		4CB322291342CDF0008FC946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CB3222B1342CDF0008FC946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CB3222D1342CDF0008FC946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4CB322311342CDF0008FC946 /* FBProgressView-Info.plist */ = {isa = PBXFileReference; path = "FBProgressView-Info.plist"; sourceTree = "<group>"; };
+		4CB322311342CDF0008FC946 /* FBProgressView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBProgressView-Info.plist"; sourceTree = "<group>"; };
 		4CB322331342CDF0008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CB322351342CDF0008FC946 /* FBProgressView-Prefix.pch */ = {isa = PBXFileReference; path = "FBProgressView-Prefix.pch"; sourceTree = "<group>"; };
+		4CB322351342CDF0008FC946 /* FBProgressView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBProgressView-Prefix.pch"; sourceTree = "<group>"; };
 		4CB322361342CDF0008FC946 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CB322381342CDF0008FC946 /* FBProgressViewAppDelegate.h */ = {isa = PBXFileReference; path = FBProgressViewAppDelegate.h; sourceTree = "<group>"; };
+		4CB322381342CDF0008FC946 /* FBProgressViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBProgressViewAppDelegate.h; sourceTree = "<group>"; };
 		4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBProgressViewAppDelegate.m; sourceTree = "<group>"; };
 		4CB3223C1342CDF1008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		4CB322431342CDF1008FC946 /* FBProgressViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBProgressViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CB3224B1342CDF1008FC946 /* FBProgressViewTests-Info.plist */ = {isa = PBXFileReference; path = "FBProgressViewTests-Info.plist"; sourceTree = "<group>"; };
+		4CB3224B1342CDF1008FC946 /* FBProgressViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBProgressViewTests-Info.plist"; sourceTree = "<group>"; };
 		4CB3224D1342CDF1008FC946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CB3224F1342CDF1008FC946 /* FBProgressViewTests-Prefix.pch */ = {isa = PBXFileReference; path = "FBProgressViewTests-Prefix.pch"; sourceTree = "<group>"; };
+		4CB3224F1342CDF1008FC946 /* FBProgressViewTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBProgressViewTests-Prefix.pch"; sourceTree = "<group>"; };
 		4CB322501342CDF1008FC946 /* FBProgressViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBProgressViewTests.h; sourceTree = "<group>"; };
 		4CB322521342CDF1008FC946 /* FBProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBProgressViewTests.m; sourceTree = "<group>"; };
+		4CB3225C1342CE11008FC946 /* FBProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBProgressView.h; sourceTree = "<group>"; };
+		4CB3225D1342CE11008FC946 /* FBProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				4CB322391342CDF0008FC946 /* FBProgressViewAppDelegate.m */,
 				4CB3223B1342CDF1008FC946 /* MainWindow.xib */,
 				4CB322301342CDF0008FC946 /* Supporting Files */,
+				4CB3225C1342CE11008FC946 /* FBProgressView.h */,
+				4CB3225D1342CE11008FC946 /* FBProgressView.m */,
 			);
 			path = FBProgressView;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			files = (
 				4CB322371342CDF0008FC946 /* main.m in Sources */,
 				4CB3223A1342CDF0008FC946 /* FBProgressViewAppDelegate.m in Sources */,
+				4CB3225E1342CE11008FC946 /* FBProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

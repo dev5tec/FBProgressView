@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class FBProgressView;
 @interface FBProgressViewAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet FBProgressView* view1;
+@property (nonatomic, retain) IBOutlet FBProgressView* view2;
 
 @end

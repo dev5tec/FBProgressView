@@ -7,17 +7,44 @@
 //
 
 #import "FBProgressViewAppDelegate.h"
+#import "FBProgressView.h"
 
 @implementation FBProgressViewAppDelegate
 
 
 @synthesize window=_window;
+@synthesize view1, view2;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    
+    
+    self.view1.progress = 0;
+    self.view2.progress = 0;
+    
+    self.view2.progressViewStyle = FBProgressViewStyleWhite;
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.1
+                                     target:self
+                                   selector:@selector(fire:)
+                                   userInfo:nil
+                                    repeats:YES];
+    
     return YES;
+}
+
+- (void)fire:(NSTimer*)timer
+{
+    self.view1.progress = self.view1.progress + 0.01;
+    self.view2.progress = self.view2.progress + 0.01;
+    NSLog(@"fired: %f", self.view1.progress);
+    
+    if (self.view1.progress >= 1.0) {
+        [timer invalidate];
+        NSLog(@"timer stopped");
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
