@@ -167,6 +167,12 @@
     }
 }
 
+- (void)setLineWidth:(CGFloat)lineWidth
+{
+    lineWidth_ = lineWidth;
+    [self _createOutlinePath];
+}
+
 - (void)setProgress:(float)progress
 {
     if (progress > 1.0) {
