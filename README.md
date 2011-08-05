@@ -3,6 +3,7 @@ Custom Progress View
 
 FBProgressView class is simple view for representing the progress of an activity. It works like UIProgressView.
 
+![](https://github.com/dev5tec/FBProgressView/raw/master/image1.png)
 
 Usage
 -----
