@@ -25,7 +25,7 @@
 #import "FBProgressView.h"
 
 @interface FBProgressView()
-@property (nonatomic, retain) UIColor* color;
+@property (nonatomic, strong) UIColor* color;
 @end
 
 @implementation FBProgressView
@@ -41,8 +41,7 @@
 #pragma mark Private Services
 - (void)_createOutlinePath
 {
-    [outlinePath_ release];
-    outlinePath_ = [[UIBezierPath bezierPath] retain];
+    outlinePath_ = [UIBezierPath bezierPath];
 
     CGSize size = self.bounds.size;
     CGFloat unit = size.height/2.0 - self.lineWidth;
@@ -123,10 +122,6 @@
         [self _init];
     }
     return self;
-}
-- (void)dealloc {
-    [outlinePath_ release];
-    [super dealloc];
 }
 
 
