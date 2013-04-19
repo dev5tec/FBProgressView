@@ -30,16 +30,8 @@ typedef enum {
     FBProgressViewStyleWhite
 } FBProgressViewStyle;
 
-@interface FBProgressView : UIView {
-    
-    UIColor* color_;
-    CGFloat lineWidth_;
-    UIBezierPath* outlinePath_;
-    FBProgressViewStyle progressViewStyle_;
-    float progress_;
-    BOOL hidesUntilStart_;
-    BOOL started_;
-}
+@interface FBProgressView : UIView
+
 @property (nonatomic, assign) CGFloat lineWidth;
 @property (nonatomic, assign) FBProgressViewStyle progressViewStyle;
 @property (nonatomic, assign) float progress;

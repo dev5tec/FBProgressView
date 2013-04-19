@@ -26,44 +26,39 @@
 
 @interface FBProgressView()
 @property (nonatomic, strong) UIColor* color;
+@property (nonatomic) BOOL started;
+@property (nonatomic, strong) UIBezierPath *outlinePath;
 @end
 
 @implementation FBProgressView
-
-@synthesize color = color_;
-@synthesize lineWidth = lineWidth_;
-@synthesize progressViewStyle = progressViewStyle_;
-@synthesize progress = progress_;
-@synthesize hidesUntilStart = hidesUntilStart_;
-
 
 #pragma mark -
 #pragma mark Private Services
 - (void)_createOutlinePath
 {
-    outlinePath_ = [UIBezierPath bezierPath];
+    _outlinePath = [UIBezierPath bezierPath];
 
     CGSize size = self.bounds.size;
     CGFloat unit = size.height/2.0 - self.lineWidth;
 
     CGPoint c1 = CGPointMake(unit+self.lineWidth, unit+self.lineWidth);
-    [outlinePath_ addArcWithCenter:c1
+    [_outlinePath addArcWithCenter:c1
                             radius:unit
                         startAngle:3*M_PI/2 endAngle:M_PI/2
                          clockwise:NO];
     
-    [outlinePath_ addLineToPoint:CGPointMake(size.width - c1.x,
+    [_outlinePath addLineToPoint:CGPointMake(size.width - c1.x,
                                             size.height - self.lineWidth)];
     CGPoint c2 = CGPointMake(size.width - unit - self.lineWidth,
                              unit+self.lineWidth);
-    [outlinePath_ addArcWithCenter:c2
+    [_outlinePath addArcWithCenter:c2
                            radius:unit
                        startAngle:M_PI/2 endAngle:-M_PI/2
                         clockwise:NO];
     
-    [outlinePath_ addLineToPoint:CGPointMake(c1.x, self.lineWidth)];
+    [_outlinePath addLineToPoint:CGPointMake(c1.x, self.lineWidth)];
     
-    [outlinePath_ setLineWidth:self.lineWidth];
+    [_outlinePath setLineWidth:self.lineWidth];
    
 }
 
@@ -75,7 +70,7 @@
     [self _createOutlinePath];
     
     self.hidesUntilStart = YES;
-    started_ = NO;
+    _started = NO;
 }
 
 
@@ -130,9 +125,9 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    if (!self.hidesUntilStart || started_) {
+    if (!self.hidesUntilStart || _started) {
         [self.color set];
-        [outlinePath_ stroke];
+        [_outlinePath stroke];
 
         if (self.progress) {
             [self _drawProgressBar];
@@ -145,7 +140,7 @@
 #pragma mark Properties
 - (void)setProgressViewStyle:(FBProgressViewStyle)progressViewStyle
 {
-    progressViewStyle_ = progressViewStyle;
+    _progressViewStyle = progressViewStyle;
 
     switch (progressViewStyle) {
         case FBProgressViewStyleGray:
@@ -164,7 +159,7 @@
 
 - (void)setLineWidth:(CGFloat)lineWidth
 {
-    lineWidth_ = lineWidth;
+    _lineWidth = lineWidth;
     [self _createOutlinePath];
 }
 
@@ -175,8 +170,8 @@
     } else if (progress < 0.0) {
         progress = 0.0;
     }
-    progress_ = progress;
-    started_ = YES;
+    _progress = progress;
+    _started = YES;
 
     [self setNeedsDisplay];
 }
