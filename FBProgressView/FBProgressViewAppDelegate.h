@@ -13,8 +13,8 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet FBProgressView* view1;
-@property (nonatomic, retain) IBOutlet FBProgressView* view2;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet FBProgressView* view1;
+@property (nonatomic, strong) IBOutlet FBProgressView* view2;
 
 @end
